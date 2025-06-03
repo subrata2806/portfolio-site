@@ -1,32 +1,161 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset & base styles */
+* {
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
+  box-sizing: border-box;
 }
-
-header {
-  background: #333;
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
-  text-align: center;
-  padding: 2rem;
+  overflow-x: hidden;
+  position: relative;
 }
 
-section {
-  margin: 2rem;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+/* Background */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('background.png') center top repeat-y;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(0.7);
 }
 
-h1, h2 {
-  color: #2c3e50;
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #4da6ff;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #eee;
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 100px 60px 60px;
+  flex-wrap: wrap;
+}
+.hero-left {
+  max-width: 50%;
+}
+.role {
+  color: #66f0ff;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.hero-left h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+.hero-left h1 span {
+  color: #ffffff;
+}
+.location {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+.about, .skills, .experience, .education {
+  background: rgba(59, 44, 119, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.about h2, .skills h2, .experience h2, .education h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.about p, .skills p, .experience p {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+/* Education table */
+.education table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.education th, .education td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+.education th {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Right side image */
+.hero-right .profile-pic {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reusable section styles */
+.section {
+  /* padding: 60px;
+  background: rgba(59, 44, 119, 0.5);
+  margin: 30px 60px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(5px);
+  color: #f0f0f0; */
+
+  background: rgba(59, 44, 119, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.section h2 {
+  /* font-size: 2rem;
+  margin-bottom: 15px; */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.section p {
+  /* font-size: 1.1rem;
+  line-height: 1.6; */
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #e0e0e0;
 }
