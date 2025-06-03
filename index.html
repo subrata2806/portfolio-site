@@ -2,47 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atosi Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Blockchain Developer | Cryptology Enthusiast</p>
-  </header>
+  <div class="background"></div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a blockchain developer with a passion for cryptography and building decentralized applications.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Solidity</li>
-      <li>Ethereum</li>
-      <li>Rust</li>
-      <li>React.js</li>
+  <nav class="navbar">
+    <div class="logo">Atosi</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </nav>
+
+  <main id="home" class="hero">
+    <div class="hero-left">
+      <p class="role">Blockchain Developer</p>
+      <h1>Hello, I am <span>Atosi Das</span></h1>
+      <p class="location">from India.</p>
+
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Atosi Das, a blockchain developer with one year of experience. I hold an M.Tech degree in Cryptology and Security from the Indian Statistical Institute, Kolkata, along with a Bachelor's and a Master's degree in Mathematics. I'm a quick learner and an organized individual, currently seeking a full-time position in blockchain technology. Let's connect!
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <p>Proficient in Solidity, Ethereum, Hyperledger Fabric, cryptographic protocols, and smart contract development. Experienced in Git, Docker, REST APIs, and blockchain security principles.</p>
+      </section>
+
+      <section class="experience">
+        <h2>Experiences</h2>
+        <p>Worked as a Blockchain Intern at XYZ Corp, where I designed and deployed smart contracts, audited code for vulnerabilities, and collaborated with cross-functional teams to implement decentralized apps.</p>
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Institution</th>
+              <th>Degree</th>
+              <th>Marks/CGPA</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Indian Statistical Institute, Kolkata</td>
+              <td>M.Tech in Cryptology and Security</td>
+              <td>8.9</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>XYZ University</td>
+              <td>M.Sc in Mathematics</td>
+              <td>8.5</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>ABC College</td>
+              <td>B.Sc in Mathematics</td>
+              <td>8.2</td>
+              <td>2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <div class="hero-right">
+      <img src="profile.jpg" alt="Atosi Das" class="profile-pic"/>
+    </div>
+  </main>
+
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <p>I provide blockchain development, smart contract auditing, decentralized application (DApp) development, and cryptographic protocol design services.</p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>NFT Minting Site</strong> – Mint NFTs on Ethereum</li>
-      <li><strong>Gasless DApp</strong> – Mint NFTs without gas fees</li>
-    </ul>
+    <p>Some of my key projects include an NFT marketplace, a DAO voting system, and a blockchain-based academic certificate verifier.</p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">yourprofile</a></p>
+    <p>Feel free to reach out to me at <strong>atosi@example.com</strong> or connect with me on LinkedIn and GitHub.</p>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Your Name</p>
-  </footer>
 </body>
 </html>
